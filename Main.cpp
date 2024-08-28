@@ -17,7 +17,7 @@ const float VIEWPORT_HEIGHT = 800.0f;
 const unsigned int h = 800, w = 800;
 
 float G = 9.81f; // Gravity
-float PENDULUM_RADIUS = 0.05f;
+float PENDULUM_RADIUS = 0.04f;
 float INITIAL_LENGTH = 0.7f; // Initial length of pendulums
 float INITIAL_MASS = 1.0f; // Mass of pendulums
 int PATH_LIMIT = 2000; // Limit the number of points in the path
