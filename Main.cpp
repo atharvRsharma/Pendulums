@@ -11,8 +11,6 @@
 #define M_PI 3.14159265358979323846
 #endif
 
-const float VIEWPORT_WIDTH = 800.0f;
-const float VIEWPORT_HEIGHT = 800.0f;
 const unsigned int h = 800, w = 800;
 
 float G = 9.81f;
@@ -49,7 +47,7 @@ std::vector<float> theta;
 std::vector<float> omega;
 
 void initialize() {
-    glViewport(0, 0, VIEWPORT_WIDTH, VIEWPORT_HEIGHT);
+    glViewport(0, 0, w, h);
     projection = glm::ortho(-2.0f, 2.0f, -2.0f, 2.0f, -1.0f, 1.0f);
 
     pendulums.push_back(glm::vec2(INITIAL_LENGTH, INITIAL_MASS));
@@ -292,4 +290,3 @@ int main() {
     glfwTerminate();
     return 0;
 }
-
