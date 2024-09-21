@@ -1,4 +1,4 @@
-# pendulums
+# Pendulums
 
 simulation of n number of pendulums attached to each other at the bob of the system's previous pendulum. 
 
